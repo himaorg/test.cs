@@ -1,6 +1,6 @@
 ﻿namespace test
 {
-    partial class Form1
+    partial class index
     {
         /// <summary>
         /// 必要なデザイナー変数です。
@@ -31,10 +31,10 @@
             this.title = new System.Windows.Forms.Label();
             this.titleChange = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.confirm = new System.Windows.Forms.Button();
+            this.termsOfUse_check = new System.Windows.Forms.CheckBox();
+            this.privacyPolicy_check = new System.Windows.Forms.CheckBox();
+            this.messegeBox = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // title
@@ -69,56 +69,57 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "ゲームを開始するためには以下に同意する必要があります";
             // 
-            // button1
+            // confirm
             // 
-            this.button1.Location = new System.Drawing.Point(12, 331);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(122, 39);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Confirm";
-            this.button1.UseVisualStyleBackColor = true;
+            this.confirm.Location = new System.Drawing.Point(12, 331);
+            this.confirm.Name = "confirm";
+            this.confirm.Size = new System.Drawing.Size(122, 39);
+            this.confirm.TabIndex = 3;
+            this.confirm.Text = "Confirm";
+            this.confirm.UseVisualStyleBackColor = true;
+            this.confirm.Click += new System.EventHandler(this.button1_Click_1);
             // 
-            // checkBox1
+            // termsOfUse_check
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("MS UI Gothic", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.checkBox1.Location = new System.Drawing.Point(19, 197);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(323, 38);
-            this.checkBox1.TabIndex = 4;
-            this.checkBox1.Text = "利用規約に同意する";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.termsOfUse_check.AutoSize = true;
+            this.termsOfUse_check.Font = new System.Drawing.Font("MS UI Gothic", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.termsOfUse_check.Location = new System.Drawing.Point(19, 197);
+            this.termsOfUse_check.Name = "termsOfUse_check";
+            this.termsOfUse_check.Size = new System.Drawing.Size(323, 38);
+            this.termsOfUse_check.TabIndex = 4;
+            this.termsOfUse_check.Text = "利用規約に同意する";
+            this.termsOfUse_check.UseVisualStyleBackColor = true;
             // 
-            // checkBox2
+            // privacyPolicy_check
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Font = new System.Drawing.Font("MS UI Gothic", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.checkBox2.Location = new System.Drawing.Point(19, 241);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(451, 38);
-            this.checkBox2.TabIndex = 5;
-            this.checkBox2.Text = "プライバシーポリシーに同意する";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.privacyPolicy_check.AutoSize = true;
+            this.privacyPolicy_check.Font = new System.Drawing.Font("MS UI Gothic", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.privacyPolicy_check.Location = new System.Drawing.Point(19, 241);
+            this.privacyPolicy_check.Name = "privacyPolicy_check";
+            this.privacyPolicy_check.Size = new System.Drawing.Size(451, 38);
+            this.privacyPolicy_check.TabIndex = 5;
+            this.privacyPolicy_check.Text = "プライバシーポリシーに同意する";
+            this.privacyPolicy_check.UseVisualStyleBackColor = true;
             // 
-            // label2
+            // messegeBox
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("MS UI Gothic", 19.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label2.Location = new System.Drawing.Point(760, 336);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(49, 34);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "…";
+            this.messegeBox.AutoSize = true;
+            this.messegeBox.Font = new System.Drawing.Font("MS UI Gothic", 19.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.messegeBox.Location = new System.Drawing.Point(760, 336);
+            this.messegeBox.Name = "messegeBox";
+            this.messegeBox.Size = new System.Drawing.Size(49, 34);
+            this.messegeBox.TabIndex = 6;
+            this.messegeBox.Text = "…";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(944, 525);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.checkBox2);
-            this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.messegeBox);
+            this.Controls.Add(this.privacyPolicy_check);
+            this.Controls.Add(this.termsOfUse_check);
+            this.Controls.Add(this.confirm);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.titleChange);
             this.Controls.Add(this.title);
@@ -135,10 +136,10 @@
         private System.Windows.Forms.Label title;
         private System.Windows.Forms.Button titleChange;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button confirm;
+        private System.Windows.Forms.CheckBox termsOfUse_check;
+        private System.Windows.Forms.CheckBox privacyPolicy_check;
+        private System.Windows.Forms.Label messegeBox;
     }
 }
 

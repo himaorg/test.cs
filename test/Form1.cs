@@ -26,5 +26,74 @@ namespace test
         {
             
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_MouseClick(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void button1_MouseCaptureChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_KeyDown(object sender, KeyEventArgs e)
+        {
+
+        }
+
+        private void button1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+        }
+
+        private void button1_KeyUp(object sender, KeyEventArgs e)
+        {
+
+        }
+
+        private void button1_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
+        {
+
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        /// <summary>
+        /// mouse hoverした時の処理
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void titleChange_MouseHover(object sender, EventArgs e)
+        {
+            this.title.Text = "https://himatsubushi.org";
+        }
+        /// <summary>
+        /// mouse leaveした時の処理
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void titleChange_MouseLeave(object sender, EventArgs e)
+        {
+            this.title.Text = "HIMAORG";
+        }
+
+        private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
